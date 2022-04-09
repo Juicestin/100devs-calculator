@@ -1,0 +1,73 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;  /* tells browser to ignore the border and padding when calculating width */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+h1{
+     padding: 1rem;
+     font-size: 30px;
+}
+
+.outer{
+     background: black;
+     width: 500px;
+     height: 500px;
+     padding: 2rem;
+     border-radius: 25px;
+}
+
+.display{
+     background-color: white;
+     height: 80px;
+     display: flex;
+     justify-content: end;
+     font-size: 70px;
+     align-items: flex-end;
+}
+
+.buttons{
+     height: 400px;
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+     padding: 2rem 2rem 2rem 3rem;
+}
+
+button{
+     font-size: 50px;
+     height: 70px;
+     width: 70px;
+     border-radius: 50%;
+     border-style: none;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
